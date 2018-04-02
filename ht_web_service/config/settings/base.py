@@ -80,7 +80,8 @@ THIRD_PARTY_APPS = [
 ]
 LOCAL_APPS = [
     'ht_web_service.users.apps.UsersConfig',
-    'ht_web_service.apps.api_v1'
+    'ht_web_service.apps.api_v1',
+    'ht_web_service.apps.ht',
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
