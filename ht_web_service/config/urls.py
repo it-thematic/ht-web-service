@@ -16,6 +16,8 @@ urlpatterns = [
     url(r'^users/', include('ht_web_service.users.urls', namespace='users')),
     url(r'^accounts/', include('allauth.urls')),
 
+    url(r'^api_v1/', include('ht_web_service.apps.api_v1.urls', namespace='api_v1'))
+
     # Your stuff: custom urls includes go here
 
 

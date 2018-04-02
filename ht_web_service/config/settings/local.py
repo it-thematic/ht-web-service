@@ -8,10 +8,14 @@ DEBUG = env.bool('DJANGO_DEBUG', default=True)
 # https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
 SECRET_KEY = env('DJANGO_SECRET_KEY', default='FhMSgsujIVFDO6lHc1GfbJKi2fuEootrkXmrWTw1pnu2Ay7Na7cXsWAJuYYaIVKo')
 # https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
+
 ALLOWED_HOSTS = [
-    "localhost",
-    "0.0.0.0",
-    "127.0.0.1",
+    '127.0.0.1',
+    '192.168.2.233',
+    '192.168.2.227',
+    'localhost',
+    '192.168.2.236',
+    '192.168.2.238',
 ]
 
 # CACHES
@@ -62,3 +66,5 @@ INSTALLED_APPS += ['django_extensions']  # noqa F405
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+
+
