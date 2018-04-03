@@ -1,8 +1,0 @@
-venv/**
-/venv
-ht_web_service_test/**
-ht_web_service_test
-/ht_web_service_test
-simple_ht_web_service/**
-/simple_ht_web_service
-.gitignore
