@@ -48,6 +48,16 @@ DATABASES = {
     }
 }
 # DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'ht_web_service',
+#         'USER': 'htwebservice',
+#         'PASSWORD': 'htwebserviceadmin',
+#         'HOST': '195.98.73.242',
+#         'PORT': '5432',
+#     }
+# }
+# DATABASES = {
 #     'default': env.db('DATABASE_URL', default='postgres:///ht_web_service'),
 # }
 # DATABASES['default']['ATOMIC_REQUESTS'] = True

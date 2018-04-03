@@ -72,7 +72,7 @@ def search(query):
                     body={"query": {
                             "query_string": {
                                 "query": "*{}*".format(query),
-                                "fields": ['event', 'order'],
+                                # "fields": ['event', 'order'],
                             }
                         },
                         'size': 1000,
