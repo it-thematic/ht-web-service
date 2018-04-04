@@ -4,6 +4,7 @@ from elasticsearch_dsl.query import MultiMatch, Match, Q, MoreLikeThis, FuzzyLik
 from elasticsearch.helpers import bulk
 from elasticsearch import Elasticsearch
 from . import models
+import re
 
 connections.create_connection()
 
@@ -68,10 +69,13 @@ def search(query):
     # response = s[0:1000].execute()
     # print(response)
     es = Elasticsearch()
+    print(query)
+    if ":" in query:
+        query = query.replace(":", "\\:")
     res = es.search(index="feature-index",
                     body={"query": {
                             "query_string": {
-                                "query": "*{}*".format(query),
+                                "query": "\\*{}\\*".format(str(query)),
                                 # "fields": ['event', 'order'],
                             }
                         },
